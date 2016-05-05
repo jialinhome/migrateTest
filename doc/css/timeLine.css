@@ -1,0 +1,27 @@
+/*global 自己不用可以删掉*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, a, blockquote, th { margin: 0;padding: 0;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+ol, ul { list-style: none; }
+table {border-collapse: collapse;border-spacing: 0px;}
+fieldset, img { border: 0; }
+body {margin:0px auto 0px; color:#000000;font: 12px "微软雅黑","黑体",Arial;}
+html{ height:100%; width:100%;}
+
+/*这里开始是正文，唉*/
+.timeLine{width: 100%;height:auto;float: left;margin: 50px;min-width: 300px;user-select: none;-webkit-user-select: none;-moz-user-select: none;}
+/*对时间条的时间说明*/
+.timeExplain{width: 100%;height: 15px;line-height:15px;font-weight: bolder;font-size: 1.2em;margin-bottom: -10px;text-align: left;}
+.timeLine ul{width: 95%;height:100%;float: left;display: block;}
+.timeLine li{width:8.3%;height:100%;float: left;display: inline;/*background: darkred;*/ position: relative;overflow: hidden; }
+/*时间线段*/
+.timeline{width:100%;height:1px;/*;float:left;display: inline;*/margin: 22px 0px 0px 0px;border-bottom:2px solid #2b2b2b; }
+/*时间节点*/
+.timedot{width: 10px;height: 10px;position: absolute;top: 19px;left: 0px;border-radius: 50%;cursor:pointer;}
+.timedot.normal{background: #ccc;}
+.timedot.hover{background: #3397f4;}
+/*时间日期*/
+.timetext{width:100%;height:auto;/*float:left;display: inline;*/font-size: 1em;line-height:34px;cursor: default;font-weight: bold;}
+/*时间播放器*/
+.timeplay{width:20px;height:20px;float:left;display: inline;cursor: pointer;margin-top:10px;}
+.timeplay.normal{background: url("../images/timeline_Ui.png") 5px 8px no-repeat;}
+.timeplay.hover{background: url("../images/timeline_Ui.png") -50px 8px no-repeat}

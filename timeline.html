@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="doc/css/timeLine.css" type="text/css" rel="stylesheet">
+    <script src="js/jquery-1.9.1.js" language="javascript" type="text/javascript"></script>
+    <script src="doc/js/timeLine.js" language="javascript" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="timeLine timeLine1" style="width: 400px"></div>
+<div class="timeLine timeLine2" style="width: 600px"></div>
+<div class="timeLine timeLine3" style="width: 1200px"></div>
+<script type="text/javascript" language="JavaScript">
+//$(function(){
+//
+//})
+var timetext1 = {
+    'year': ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+    "explain": "2015年",
+    "speed":"2000"
+}
+var timetext2 = {
+    'year': ["4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月", "1月", "2月", "3月"],
+    "explain": "2014年-2015年",
+    "speed":"2000"
+
+}
+var timetext3 = {
+    'year': ["2000年", "2001年", "2002年", "2003年", "2004年", "2005年", "2006年", "2007年", "2008年", "2009年", "2010年", "2011年", "2012年"],
+    "explain": "2014年-2015年",
+    "speed":"2000"
+
+}
+var abc = new TimeLine("timeLine1", timetext1["year"].length, timetext1, yearPrint);
+var bcd = new TimeLine("timeLine2", timetext2["year"].length, timetext2, yearPrint);
+var cde = new TimeLine("timeLine3", timetext3["year"].length, timetext3, yearPrint);
+//外调方法
+function yearPrint(e) {
+    console.log(e+"我给弹的是索引值");
+}
+</script>
+</body>
+</html>
